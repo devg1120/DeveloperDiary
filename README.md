@@ -5,92 +5,96 @@ disqus: hackmd
 
 開発日誌　Project Title
 ===
-![downloads](https://img.shields.io/github/downloads/atom/atom/total.svg)
-![build](https://img.shields.io/appveyor/ci/:user/:repo.svg)
-![chat](https://img.shields.io/discord/:serverId.svg)
 
-## Table of Contents
+# Table of Contents
 
 [TOC]
 
-## Beginners Guide
 
-If you are a total beginner to this, start here!
+# 方式
 
-1. Visit hackmd.io
-2. Click "Sign in"
-3. Choose a way to sign in
-4. Start writing note!
+### aniways
 
-User story
+https://github.com/devg1120/aniways
+
+- #### FrontEnd WEB
+     -- Sveltekit /nodejs    SSR
+     > lucide-svelte
+     > bits-ui
+- #### Backend API
+     -- java 17+
+     -- kotlin ktor
+     ```
+     DI                 :koin
+     ORM                :ktorm
+     DB-CONNECTION-POOL :hikari
+     DB-MIGRATION-TOOL  :flyway
+     DB-DRIVER          :driver.postgres
+     DB-DRIVER          :kreds
+     ```
+     -- Bun
+     -- high-performance HLS proxy 
+     
+---
+### sveltekit-hono
+
+https://github.com/devg1120/hono-sveltekit/tree/main/sveltekit-hono
+
+Schema and Types
+
+- [drizzle-orm]()
+- [drizzle-zod]()
+- [zod]()
+- [@hono/zod-validator]()
+
+Database and tools
+
+- [postgres]()
+- [drizzle-kit]()
+- [tsx]()
+
+Authentication
+
+- [lucia]()
+- [oslo]()
+
+Utils
+
+- [pino]()
+- [pino-pretty]()
+- [decode-formdata]()
+- [date-fns]()
+
+---
+### hono-kysely-edb
+
+https://github.com/devg1120/kysely-test
+
+- sqlite
+- postgres
+- cockroachdb
+
+
 ---
 
-```gherkin=
-Feature: Guess the word
+### Kotlin/Ktor認証
 
-  # The first example has two steps
-  Scenario: Maker starts a game
-    When the Maker starts a game
-    Then the Maker waits for a Breaker to join
+https://github.com/devg1120/ktor-auth-example
 
-  # The second example has three steps
-  Scenario: Breaker joins a game
-    Given the Maker has started a game with the word "silky"
-    When the Breaker joins the Maker's game
-    Then the Breaker must guess a word with 5 characters
-```
-> I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it. [name=Bill Gates]
+| kotin  ktor
+
+- auth-from-session
+- auth-jwt-rs256
 
 
-```gherkin=
-Feature: Shopping Cart
-  As a Shopper
-  I want to put items in my shopping cart
-  Because I want to manage items before I check out
-
-  Scenario: User adds item to cart
-    Given I'm a logged-in User
-    When I go to the Item page
-    And I click "Add item to cart"
-    Then the quantity of items in my cart should go up
-    And my subtotal should increment
-    And the warehouse inventory should decrement
-```
-
-> Read more about Gherkin here: https://docs.cucumber.io/gherkin/reference/
-
-User flows
 ---
-```sequence
-Alice->Bob: Hello Bob, how are you?
-Note right of Bob: Bob thinks
-Bob-->Alice: I am good thanks!
-Note left of Alice: Alice responds
-Alice->Bob: Where have you been?
-```
+### Svelte Postgresql app
 
-> Read more about sequence-diagrams here: http://bramp.github.io/js-sequence-diagrams/
+1. node-pg ONLY   not ORM
 
-Project Timeline
----
-```mermaid
-gantt
-    title A Gantt Diagram
+  https://github.com/devg1120/sveltekit-psql-app
 
-    section Section
-    A task           :a1, 2014-01-01, 30d
-    Another task     :after a1  , 20d
-    section Another
-    Task in sec      :2014-01-12  , 12d
-    anther task      : 24d
-```
+   - 生SQLコード
+   - insert delete
 
-> Read more about mermaid here: http://mermaid-js.github.io/mermaid/
 
-## Appendix and FAQ
-
-:::info
-**Find this document incomplete?** Leave a comment!
-:::
-
-###### tags: `Templates` `Documentation`
