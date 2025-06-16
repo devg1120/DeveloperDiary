@@ -42,7 +42,9 @@ https://github.com/devg1120/hono-sveltekit/tree/main/sveltekit-hono
 
 
 https://github.com/devg1120/hono-sveltekit/tree/main/sveltekit-hono-playground
-![hono_playgrand](https://hackmd.io/_uploads/HyufIMp7lg.png =400x )
+
+![hono_playgrand](https://hackmd.io/_uploads/HkWQEQ6mxx.png)
+
 
 
 > Using Hono with SvelteKit - Full type-safety with RPC
